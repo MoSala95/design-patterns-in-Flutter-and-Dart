@@ -11,10 +11,10 @@ class Observer {
   }
 }
 
-class NotificationObserver implements Observable {
+class NotificationObservable implements Observable {
   List<Observer> ? _observers;
 
-  NotificationObserver([List<Observer>? observers]) {
+  NotificationObservable([List<Observer>? observers]) {
     _observers = observers ?? [];
   }
 
@@ -31,9 +31,9 @@ class NotificationObserver implements Observable {
 
 void main() {
   var me = Observer("me");
-  var mrCoffee = NotificationObserver(List.from([me]));
+  var notificationObservable = NotificationObservable(List.from([me]));
   var myFriend = Observer("my friend");
-  mrCoffee.registerObserver(myFriend);
-  mrCoffee.notifyObservers();
+  notificationObservable.registerObserver(myFriend);
+  notificationObservable.notifyObservers();
 
 }
