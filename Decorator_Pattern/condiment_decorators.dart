@@ -29,12 +29,10 @@ class Whip extends CondimentDecorator{
   }
 
   @override
-  // TODO: implement beverageDesc
   get beverageDesc => beverage!.beverageDesc! + " ,Whip";
 
   @override
   double cost() {
-    // TODO: implement cost
     return .75 + beverage!.cost();
   }
 }
