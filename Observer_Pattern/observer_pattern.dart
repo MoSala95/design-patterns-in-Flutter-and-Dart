@@ -1,29 +1,22 @@
 abstract class Observable {
-
   void registerObserver(Observer observer);
-
   void notifyObservers();
-
 }
 
 class Observer {
   String name;
-
   Observer(this.name);
-
   void notify() {
     print("new notification for $name!");
   }
 }
 
 class NotificationObserver implements Observable {
-
   List<Observer> ? _observers;
 
   NotificationObserver([List<Observer>? observers]) {
     _observers = observers ?? [];
   }
-
 
   void registerObserver(Observer observer) {
     _observers!.add(observer);
@@ -34,7 +27,6 @@ class NotificationObserver implements Observable {
       observer.notify();
     }
   }
-
 }
 
 void main() {
