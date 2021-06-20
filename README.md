@@ -3,4 +3,4 @@
 brain with a good working knowledge of patterns, you can then start to apply them to your new designs, 
 and rework your old code when you find it’s degrading into an infl exible mess of jungle spaghetti code."
 
-As Said in "Head First Design Patterns: A Brain-Friendly Guide"
+As said in "Head First Design Patterns: A Brain-Friendly Guide"
